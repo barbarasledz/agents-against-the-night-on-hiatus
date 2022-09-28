@@ -3,7 +3,7 @@
         <nav>
             <div id="navbar-brand">
                 <!-- Add logo/image here? -->
-                <a><h1>Agents Against the Night</h1></a>
+                <a><h1 class="appname">Agents Against the Night</h1></a>
             </div>
             <ul id="navbar-links">
                 <a>
@@ -26,13 +26,14 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 /* Mobile + General styling */
-nav {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    gap: 10px;
+h1 {
+    color: var(--red);
+}
+a {
+  font-weight: bold;
+  color: var(--purple);
 }
 ul {
     list-style: none;
@@ -41,9 +42,15 @@ ul {
     margin: 10px;
     height: 100%;
 }
+nav a.router-link-exact-active {
+  color: var(--blue);
+}
 
 /* Desktop styling */
 @media screen and (min-width:500px)  {
+    h1 {
+        font-size: 2rem;
+    }
     nav {
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -59,3 +66,9 @@ ul {
     }
 }
 </style>
+
+<script>
+export default {
+    name: 'NavBar'
+}
+</script>

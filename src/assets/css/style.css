@@ -1,6 +1,65 @@
 /* For global styling of the app */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#app {
+    min-height: 100%;
+}
+
+a {
+    font-weight: bold;
+    color: var(--purple);
+}
+
+ h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-color: var(--black);
+}
+
+#content-container {
+    padding: 10px;
+    top: 100px;
+    bottom: 60px;
+    overflow: auto;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.appname {
+    font-family: 'Rubik Distressed', cursive;
+    color: var(--red);
 }
