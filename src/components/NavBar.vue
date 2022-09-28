@@ -3,22 +3,24 @@
         <nav>
             <div id="navbar-brand">
                 <!-- Add logo/image here? -->
-                <a><h1 class="appname">Agents Against the Night</h1></a>
+                <a>
+                    <h1 class="appname">Agents Against <br class="hide-on-desktop" /> the Night</h1>
+                </a>
             </div>
             <ul id="navbar-links">
                 <a>
                     <li>
-                    Create New
+                        Create New
                     </li>
                 </a>
                 <a>
                     <li>
-                    Characters
+                        Characters
                     </li>
                 </a>
                 <a>
                     <li>
-                    Log In
+                        Log In
                     </li>
                 </a>
             </ul>
@@ -29,38 +31,50 @@
 <style scoped>
 /* Mobile + General styling */
 h1 {
-    color: var(--red);
+    font-size: 2rem;
 }
+
 a {
-  font-weight: bold;
-  color: var(--purple);
+    font-weight: bold;
+    color: var(--purple);
 }
+
 ul {
     list-style: none;
 }
+
 #navbar-links li {
     margin: 10px;
     height: 100%;
+    text-transform: uppercase;
 }
+
 nav a.router-link-exact-active {
-  color: var(--blue);
+    color: var(--blue);
+}
+
+.appname {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Desktop styling */
-@media screen and (min-width:500px)  {
+@media screen and (min-width:500px) {
     h1 {
         font-size: 2rem;
     }
+
     nav {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
     }
+
     #navbar-links {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
+
     #navbar-links li {
         margin: 0px 10px;
     }

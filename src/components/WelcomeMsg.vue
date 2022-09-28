@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
-    <h1>Welcome to:<br />
-      <span class="appname">Agents Against the Night</span></h1>
+    <h1><span class="appname">Agents Against<br class="hide-on-desktop" /> the Night</span></h1>
     <h3>A fan-made character sheet tool for Night's Black Agents</h3>
     <br>
   </div>
@@ -15,7 +14,9 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+h1 {
+    font-size: 2rem;
+  }
 ul {
   list-style-type: none;
   padding: 0;

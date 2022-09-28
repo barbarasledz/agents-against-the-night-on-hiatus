@@ -1,11 +1,14 @@
 /* For global styling of the app */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html, body {
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -19,9 +22,11 @@ a {
     color: var(--purple);
 }
 
- h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Times New Roman', Times, serif;
- }
+}
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -57,9 +62,17 @@ footer {
     width: 100%;
     background-color: var(--black);
     font-family: 'Times New Roman', Times, serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 
 .appname {
     font-family: 'Rubik Distressed', cursive;
     color: var(--red);
+}
+
+@media screen and (min-width:500px) {
+    .hide-on-desktop {
+        display: none;
+    }
 }

@@ -5,7 +5,7 @@
                 Created by <a href="">Barbara Sledz</a> and <a href="">Alexander Stec</a>
             </li>
             <li>
-                <a href="https://github.com/barbarasledz/agents-against-the-night">Source Code</a>
+                Source code can be found on <a href="https://github.com/barbarasledz/agents-against-the-night">GitHub</a>
             </li>
         </ul>
     </footer>
