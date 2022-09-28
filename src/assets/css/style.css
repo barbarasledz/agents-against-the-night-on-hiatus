@@ -1,0 +1,6 @@
+/* For global styling of the app */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
