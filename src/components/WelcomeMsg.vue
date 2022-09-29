@@ -27,7 +27,7 @@ li {
   margin: 0 10px;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:550px) {
   h1 {
     font-size: 3.5rem;
   }

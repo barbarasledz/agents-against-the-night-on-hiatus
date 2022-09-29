@@ -40,14 +40,6 @@ h3 {
     justify-content: space-between;
 }
 
-nav {
-    padding: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    background-color: var(--black);
-}
-
 #content-container {
     padding: 10px;
     top: 100px;

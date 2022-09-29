@@ -43,8 +43,23 @@ ul {
     list-style: none;
 }
 
+nav {
+    padding: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-color: var(--black);
+    gap: 15px;
+}
+
+#navbar-links {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    row-gap: 10px;
+}
+
 #navbar-links li {
-    margin: 10px;
     height: 100%;
     text-transform: uppercase;
 }
@@ -58,12 +73,13 @@ nav a.router-link-exact-active {
 }
 
 /* Desktop styling */
-@media screen and (min-width:500px) {
+@media screen and (min-width:550px) {
     h1 {
         font-size: 2rem;
     }
 
     nav {
+        padding: 30px 20px;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
@@ -73,11 +89,14 @@ nav a.router-link-exact-active {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
+        column-gap: 15px;
+    }
+    #navbar-links li {
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
     }
 
-    #navbar-links li {
-        margin: 0px 10px;
-    }
 }
 </style>
 
