@@ -3,26 +3,26 @@
         <nav>
             <div id="navbar-brand">
                 <!-- Add logo/image here? -->
-                <a>
+                <router-link to="/">
                     <h1 class="appname">Agents Against <br class="hide-on-desktop" /> the Night</h1>
-                </a>
+                </router-link>
             </div>
             <ul id="navbar-links">
-                <a>
+                <router-link to="/newAgent">
                     <li>
                         Create New
                     </li>
-                </a>
-                <a>
+                </router-link>
+                <router-link to="/agents">
                     <li>
-                        Characters
+                        Agents
                     </li>
-                </a>
-                <a>
+                </router-link>
+                <router-link to="/login">
                     <li>
                         Log In
                     </li>
-                </a>
+                </router-link>
             </ul>
         </nav>
     </div>
@@ -32,11 +32,12 @@
 /* Mobile + General styling */
 h1 {
     font-size: 2rem;
+    text-decoration-color: var(--purple);
 }
-
 a {
     font-weight: bold;
     color: var(--purple);
+    text-decoration: none;
 }
 
 ul {
