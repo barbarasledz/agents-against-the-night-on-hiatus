@@ -25,7 +25,7 @@ export default {
   methods: {
     onSubmit: function (event) {
       event.preventDefault();
-      auth.login();
+      auth.login(event.target.elements.username.value);
       this.$router.push({ name: 'home' });
     }
   }

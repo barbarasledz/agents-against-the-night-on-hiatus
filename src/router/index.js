@@ -6,6 +6,7 @@ import AllAgents from "../views/agents/AllAgents.vue"
 import NewAgent from "../views/agents/NewAgent.vue"
 import UserProfile from "../views/authentication/UserProfile.vue"
 import * as auth from '../services/AuthService'
+import store from '../store/index.js'
 
 const routes = [
   {
@@ -74,6 +75,11 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  store.dispatch('authenticate');
+  next();
 })
 
 export default router

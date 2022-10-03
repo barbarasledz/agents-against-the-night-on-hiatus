@@ -5,11 +5,11 @@ export function isLoggedIn() {
     return token != null;
 }
 
-export function login() {
+export function login(username = 'Some User') {
     // placeholder
     // TODO: replace with actual token stuff
     const token = {
-        username: 'barbara'
+        "username": username
     }
     setToken(token);
 }
@@ -23,7 +23,7 @@ function setToken(token) {
 export function getUsername() {
     // placeholder
     // TODO: return actual username
-    return 'Barbara'
+    return JSON.parse(localStorage.getItem('token'))['username'];
 }
 
 export function getUserId() {

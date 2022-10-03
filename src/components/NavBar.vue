@@ -107,7 +107,7 @@ nav a:active {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
-        column-gap: 15px;
+        column-gap: 20px;
     }
     #navbar-links li {
         display: inline-block;
