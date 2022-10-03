@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LogIn from '../views/authentication/LogIn.vue'
 import RegisterAcc from '../views/authentication/RegisterAcc.vue'
-import AllAgents from "../views/characters/AllAgents.vue"
-import NewAgent from "../views/characters/NewAgent.vue"
+import AllAgents from "../views/agents/AllAgents.vue"
+import NewAgent from "../views/agents/NewAgent.vue"
 
 const routes = [
   {

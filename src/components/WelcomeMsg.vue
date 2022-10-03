@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1><span class="appname">Agents Against<br class="hide-on-desktop" /> the Night</span></h1>
-    <h3>A fan-made character sheet tool for Night's Black Agents</h3>
+    <h3>A fan-made character sheet tool for <a href="https://pelgranepress.com/product/nights-black-agents/">Night's Black Agents</a></h3>
     <br>
   </div>
 </template>

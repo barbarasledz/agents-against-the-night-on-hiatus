@@ -21,6 +21,9 @@ a {
     font-weight: bold;
     color: var(--purple);
 }
+a:active {
+    color: var(--blue);
+}
 
 h1,
 h2,

@@ -8,6 +8,11 @@
                 </router-link>
             </div>
             <ul id="navbar-links">
+                <router-link to="/">
+                    <li>
+                        Home
+                    </li>
+                </router-link>
                 <router-link to="/newAgent">
                     <li>
                         Create New
