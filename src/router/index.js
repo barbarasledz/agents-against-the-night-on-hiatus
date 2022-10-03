@@ -31,7 +31,6 @@ const routes = [
     name: 'new-agent',
     component: NewAgent
   },
-  // TODO: figure out how to make a default path...
   {
     path: '/:pathMatch(.*)*',
     redirect: '/'

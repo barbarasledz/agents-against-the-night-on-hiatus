@@ -2,7 +2,7 @@
     <footer>
         <ul>
             <li>
-                Created by <a href="">Barbara Sledz</a> and <a href="">Alexander Stec</a>
+                Created by <a href="https://github.com/barbarasledz/">Barbara Sledz</a>
             </li>
             <li>
                 Source code can be found on <a href="https://github.com/barbarasledz/agents-against-the-night">GitHub</a>

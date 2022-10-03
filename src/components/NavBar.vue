@@ -71,7 +71,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-    color: var(--blue);
+    color: var(--red);
 }
 
 .appname {
