@@ -4,6 +4,8 @@ import LogIn from '../views/authentication/LogIn.vue'
 import RegisterAcc from '../views/authentication/RegisterAcc.vue'
 import AllAgents from "../views/agents/AllAgents.vue"
 import NewAgent from "../views/agents/NewAgent.vue"
+import UserProfile from "../views/authentication/UserProfile.vue"
+import * as auth from '../services/AuthService'
 
 const routes = [
   {
@@ -14,12 +16,26 @@ const routes = [
   {
     path: '/login',
     name: 'log-in',
-    component: LogIn
+    component: LogIn,
+    beforeEnter: (to, from, next) => {
+      if (auth.isLoggedIn()) {
+        next('/profile');
+      } else {
+        next();
+      }
+    }
   },
   {
     path: '/register',
     name: 'register',
-    component: RegisterAcc
+    component: RegisterAcc,
+    beforeEnter: (to, from, next) => {
+      if (auth.isLoggedIn()) {
+        next('/home');
+      } else {
+        next();
+      }
+    }
   },
   {
     path: '/agents',
@@ -30,6 +46,16 @@ const routes = [
     path: '/newAgent',
     name: 'new-agent',
     component: NewAgent
+  },
+  {
+    path: '/profile',
+    name: 'user-profile',
+    component: UserProfile,
+    beforeEnter: (to, from, next) => {
+      if (auth.isLoggedIn()) {
+        next();
+      }
+    }
   },
   {
     path: '/:pathMatch(.*)*',

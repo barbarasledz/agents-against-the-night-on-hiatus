@@ -18,14 +18,18 @@ body {
 }
 
 a {
-    font-weight: bold;
     color: var(--purple);
+}
+
+a:active {
+    color: var(--red);
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Times New Roman', Times, serif;
+    color: var(--red);
 }
 
 #app {
@@ -63,8 +67,44 @@ footer {
     color: var(--red);
 }
 
+.submit-button {
+    display: inline-block;
+    margin: auto;
+    padding: 5px 10px;
+    border: 2px solid var(--purple);
+    font-weight: bold;
+    color: var(--purple);
+    background-color: var(--black);
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
+
 @media screen and (min-width:500px) {
     .hide-on-desktop {
         display: none;
+    }
+    a:hover {
+        color: var(--red);
+    }
+    a:active {
+        color: var(--blue);
+    }
+    .submit-button {
+        margin-top: 10px;
     }
 }

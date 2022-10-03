@@ -1,9 +1,9 @@
 <template>
   <div id="nav-and-content">
-  <NavBar />
-  <div id="content-container">
-    <router-view />
-  </div>
+    <NavBar />
+    <div id="content-container">
+      <router-view />
+    </div>
   </div>
   <FooterBar />
 </template>
@@ -17,6 +17,9 @@ export default {
   components: {
     NavBar,
     FooterBar
-}
+  },
+  beforeCreate: function () {
+    this.$store.dispatch('authenticate')
+  }
 }
 </script>

@@ -23,7 +23,12 @@
                         Agents
                     </li>
                 </router-link>
-                <router-link to="/login">
+                <router-link to="/profile" v-if="this.$store.state.username != null">
+                    <li>
+                        {{this.$store.state.username}}
+                    </li>
+                </router-link>
+                <router-link to="/login" v-else>
                     <li>
                         Log In
                     </li>
@@ -74,6 +79,10 @@ nav a.router-link-exact-active {
     color: var(--red);
 }
 
+nav a:active {
+    color: var(--red);
+}
+
 .appname {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -89,6 +98,9 @@ nav a.router-link-exact-active {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+    }
+    nav a:hover {
+        color: var(--red);
     }
 
     #navbar-links {
