@@ -1,30 +1,24 @@
 const express = require('express');
 const router = express.Router();
 
-// Get all agents
-router.get('/agents', (req, res) => {
-    res.send('get.agents -- gets all agents (of this account)');
-})
 
-// Create an agent
-router.post('/agents', (req, res) => {
-    res.send('post.agents -- create an agent');
-})
+router.route('/agents')
+    .get((req, res) => { // gets all agents
+        res.send('get agents -- gets all agents');
+    })
+    .post((req, res) => { //posts an agent
+        res.send('post agents -- adds an agent')
+    })
 
-// Get specific agent
-router.get('/agents/:id', (req, res) => {
-    res.send('get.agents/:id -- get an agent by id')
-})
+router.route('/agents/:id')
+    .get((req, res) => { // gets a specific agent
+        res.send('get agents/:id -- get an agent by ID')
+    })
+    .patch((req, res) => {
+        res.send('patch agents/:id -- modifies a specific agent')
+    })
+    .delete((req, res) => { 
+        res.send('delete agents/:id -- removes a specific agent')
+    })
 
-// Updates a specific agent
-// use patch because the agent files may get long
-// (aka, updating them with PUT may get spicy)
-router.patch('/agents/:id', (req, res) => {
-    res.send('patch.agents/:id -- updates an agent by id')
-})
-
-// Deletes a specific agent
-// (it falls to the client to confirm with the user if they're sure they want to delete the agent)
-router.delete('/agents/:id', (req, res) => {
-    res.send('delete.agents/:id -- deletes an agent by id')
-})
+module.exports = router;  
