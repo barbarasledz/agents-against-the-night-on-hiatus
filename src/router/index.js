@@ -8,6 +8,7 @@ import UserProfile from "../views/authentication/UserProfile.vue"
 import * as auth from '../services/AuthService'
 import store from '../store/index.js'
 
+
 const routes = [
   {
     path: '/',
