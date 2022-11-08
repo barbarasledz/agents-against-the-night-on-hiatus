@@ -23,3 +23,4 @@ npm run dev
 ## Changelog
 - September 28, 2022: Start of development, just getting things set up
 - October 04, 2022: Most pages and views are set up, including simulation of login using "tokens" in localstorage; beginning work on backend.
+- November 07, 2022: Controller stub code set up for most API endpoints, minor front-end changes
