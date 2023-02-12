@@ -1,11 +1,14 @@
-# agents-against-the-night
+# agents-against-the-night (ON HIATUS)
 
 ## About
-*Agents Against the Night* is a fully-online fan-made character sheet creation tool for the TTRPG [*Night's Black Agents*](https://pelgranepress.com/nights-black-agents/) by [Pelgrane Press](https://pelgranepress.com/). It is a single-page application built using the MEVN stack. 
 
-The project was created and is managed by [Barbara Sledz](https://github.com/barbarasledz/).
+*UPDATE: Project is on hiatus and not currently being developed. Sorry! Stay tuned for alternatives...*
 
-This project is currently __**in development**__. Things probably don't work yet, but they will soon!
+*Agents Against the Night* will be a fully-online fan-made character sheet creation tool for the TTRPG [*Night's Black Agents*](https://pelgranepress.com/nights-black-agents/) by [Pelgrane Press](https://pelgranepress.com/). It is a single-page application built using the MEVN stack. 
+
+The project is created and managed by [Barbara Sledz](https://github.com/barbarasledz/).
+
+This project is currently ~~in development~~ on hiatus. Things don't work yet!
 
 ## Project setup
 ```
@@ -24,3 +27,4 @@ npm run dev
 - September 28, 2022: Start of development, just getting things set up
 - October 04, 2022: Most pages and views are set up, including simulation of login using "tokens" in localstorage; beginning work on backend.
 - November 07, 2022: Controller stub code set up for most API endpoints, minor front-end changes
+- February 12, 2023: Officially put on hiatus for the time being (reconsidering the technical stack used); will be replaced by a simpler tool until the project is reinstated and actively worked on again. 
